@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "bloodshed",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Bloodshed",
+  "description": "Blood spills everywhere!",
   "authors": [
-    "Me!"
+    "TheTarasus_01"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -19,11 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "ru.thetarasus.bloodshed.Bloodshed"
+    ],
+    "client": [
+      "ru.thetarasus.bloodshed.BloodshedClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "bloodshed.mixins.json"
   ],
 
   "depends": {
